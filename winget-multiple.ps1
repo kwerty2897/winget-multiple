@@ -10,8 +10,8 @@ Try{
 Catch{
     Write-Host -Foreground Green 'Not found, trying install it'
     Start-Process 'ms-windows-store://pdp?productid=9NBLGGH4NNS1'
-    Write-Host -Foreground Red 'If you dont have Store try wsreset.exe from admin in terminal shell'
-    Read-Host -Prompt "Install/update App Installer in MS Store window and press any key to continue"    
+    Write-Host -Foreground Red 'If you dont have Store run wsreset -i from admin in terminal shell'
+    Read-Host -Prompt "Install/update App Installer in MS Store window, then press any key to continue"    
 }
 Finally {
     Write-Host -Foreground Green "Installing WinGet packages"
